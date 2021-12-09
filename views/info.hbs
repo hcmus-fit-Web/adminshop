@@ -1,0 +1,54 @@
+<div id="page-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Create Admin </h2>
+            <h5>Welcome to my web, Love to see you back! </h5>
+
+        </div>
+    </div>
+    <!-- /. ROW  -->
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Form Elements -->
+            <div class="panel panel-default">
+                <div class="panel-heading"></div>
+                <div class="panel-body">
+                    <div class="reg-form">
+                        <div class="container">
+                            <div class="reg">
+                                <h3>Create Admin Account</h3>
+                                <p style="margin-top: -20px">Welcome, please enter the following details to continue.</p>
+                                {{#if user}}
+                                    <form>
+
+                                        <div class="form-group">
+                                            <label> Username :{{user.username}} </label>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label> Email:  {{user.email}} </label>
+\                                        </div>
+
+                                        <div class="form-group">
+                                            <label> Name :{{user.name}} </label>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label> Phone : {{user.number}}</label>
+                                        </div>
+
+
+                                    </form>
+                                  {{/if}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Form Elements -->
+    </div>
+</div>
