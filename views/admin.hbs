@@ -30,10 +30,9 @@
                             <tr>
                                 <th  scope="col">Username</th>
                                 <th  scope="col">Email</th>
-                                <th  scope="col">Admin Name</th>
+                                <th  scope="col">Name</th>
                                 <th  scope="col">Password</th>
                                 <th  scope="col">Number</th>
-                                <th  scope="col">Update</th>
                                 <th  scope="col">Delete</th>
                             </tr>
                             </thead>
@@ -45,14 +44,9 @@
                                     <td class="small">{{this.name}}</td>
                                     <td class="small">{{this.password}}</td>
                                     <td class="small">{{this.number}}</td>
+
                                     <td>
-                                        <a class="btn btn-success" style="align-items: center" href="/{{this._id}}" >
-                                            <i class="fa fa-refresh"></i>
-                                             Update
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="btn btn-danger" style="align-items: center" href="/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record');">
+                                        <a class="btn btn-danger" style="align-items: center" href="/register/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record');">
                                             <i class="fa fa-edit"></i>
                                              Delete</a>
                                     </td>

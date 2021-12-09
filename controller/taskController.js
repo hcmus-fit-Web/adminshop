@@ -197,4 +197,16 @@ router.get('/delete/:id',(req,res)=>{
 
 })
 
+
+router.get('/register/delete/:id',(req,res)=>{
+    Admin.findByIdAndRemove(req.params.id,(err,doc)=>{
+        if(!err){
+            res.redirect('/admin')
+        }else{
+            console.log("An error Teh Delete "+ err);
+        }
+    })
+
+})
+
 module.exports = router;

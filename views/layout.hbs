@@ -33,8 +33,8 @@
 
             {{#if user}}
                 Hello, {{user.username}}
+                <a href="/info" style="margin-right: -10px" class="btn btn-danger square-btn-adjust">Info</a> &nbsp;
                 <a href="/logout" style="margin-right: -30px" class="btn btn-danger square-btn-adjust">Sign out</a> &nbsp;&nbsp;
-                <a href="/info" style="margin-right: -30px" class="btn btn-danger square-btn-adjust">Info</a> &nbsp;
             {{else}}
                 <a href="/login" style="margin-right: -30px" class="btn btn-danger square-btn-adjust">Sign in</a> &nbsp;
             {{/if}}
